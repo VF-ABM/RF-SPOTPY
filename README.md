@@ -31,7 +31,7 @@ Use the package manager [pip](https://pypi.org/project/spotpy/) to install SPOTP
 pip install spotpy
 ```
 
-There are various ways to install [SciPy](https://www.scipy.org/install.html). 
+There are various [ways](https://www.scipy.org/install.html) to install SciPy. 
 
 ## Getting Started
 
@@ -57,6 +57,6 @@ Random Forest
 ### Calibration using SPOTPY
 
 1. Choose number of iterations in *spot.py*.
-2. Choose location and parameters in *calibration.py*.
-3. Choose location and parameters in *setup.py*.
+2. Choose location of execution and parameters to be calibrated in *calibration.py*.
+3. Choose location of execution and parameters to be calibrated in *setup.py*.
 4. Run *spot.py* on Python.
