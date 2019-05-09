@@ -32,6 +32,7 @@ pip install spotpy
 ```
 
 There are various [ways](https://www.scipy.org/install.html) to install SciPy. 
+R packages are loaded in the execution of the code. 
 
 ## Getting Started
 
