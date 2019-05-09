@@ -1,4 +1,3 @@
-
 for num=1:5400
     fname = sprintf('sample%d.txt', num);
     fileID = fopen(fname,'w');
@@ -7,4 +6,3 @@ for num=1:5400
     fprintf(fileID,formatSpec,j(num,:));
     fclose(fileID);
 end
-
