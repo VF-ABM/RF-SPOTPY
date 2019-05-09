@@ -1,7 +1,5 @@
-
-filename_in=strcat('C:\Users\AMAN GARG\Desktop\New_5000\input_home.xlsx');
+filename_in=strcat('C:\Users\AMAN GARG\SA\input_home.xlsx'); # path to input file
 par_in = xlsread(filename_in);
-
 
 for num=1:5400
     flag=0;
