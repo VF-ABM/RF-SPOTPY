@@ -40,11 +40,11 @@ There are various [ways](https://www.scipy.org/install.html) to install SciPy.
 Sample Generation
 1. Run *sample_generate.m* on MATLAB.
 2. Run *generate.m* on MATLAB. 
+3. Save sample files that were generated. See "Sample_Inputs.zip" for an example.
 
 Model Execution
-1. Save generated sample files. See "Sample_Inputs.zip" for an example.
-2. Run model with sample files as input. To execute automatically, use *master.py*.
-3. Export outputs from model.
+1. Run model with sample files as input. To execute automatically, use *master.py*.
+2. Export outputs from model.
 
 Data Preprocessing
 1. Import outputs from model into MATLAB.
