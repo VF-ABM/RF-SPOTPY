@@ -20,8 +20,8 @@ Further discussion can be found in the relevant article in [Applied Sciences](ht
 
 ### Dependencies
 
-* [SciPy](https://www.scipy.org/)
-* [SPOTPY](https://pypi.org/project/spotpy/)
+* R: [clusterGeneration](https://cran.r-project.org/web/packages/clusterGeneration/index.html), [mnormt](https://cran.r-project.org/web/packages/mnormt/index.html), [corrplot](https://cran.r-project.org/web/packages/corrplot/index.html), [randomForest](https://cran.r-project.org/web/packages/randomForest/), [caret](https://cran.r-project.org/web/packages/caret/index.html)
+* Python: [SciPy](https://www.scipy.org/), [SPOTPY](https://pypi.org/project/spotpy/)
 
 #### Installation
 
