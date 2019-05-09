@@ -1,16 +1,16 @@
-    
-k=1;
+    k=1;
 for num=1:5400
        
-    filename=strcat('C:\Users\AMAN GARG\Desktop\New_5000\Outputs\For all days\Output_Biomarkers_',string(num),'.csv');
+    filename=strcat('C:\Users\AMAN GARG\Outputs\Output_Biomarkers_',string(num),'.csv'); # path to outputs from VF-ABM
     
     if exist(filename, 'file') == 0
         rest(k) = num;
         k=k+1;
         continue;
     end
-    %if ~isempty(par)
+  
     par = xlsread(filename);
+    # Outputs from VF-ABM organized by day
     out_day0_random(num, :)= par(1,:);
     out_day1_random(num, :)= par(49,:);
     out_day2_random(num, :)= par(97,:);
