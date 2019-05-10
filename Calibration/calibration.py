@@ -28,7 +28,7 @@ def execute():
   
   with open(stdout_file_name, 'a') as stdout_file:
     with open(stderr_file_name, 'a') as stderr_file:
-      # location to execute VF-ABM
+      # location to execute VF-ABM, length of simulation time (in number of ticks), and VF-ABM configuration
       subprocess.call(["/home/amangarg/vocalcord-cpuabm-v6/bin/testRun", "--numticks", "1345" , "--inputfile" , "/home/amangarg/vocalcord-cpuabm-v6/configFiles/config_VocalFold_surgical_rat.txt", "--run_id", "0"], stdout = stdout_file, stderr = stderr_file)
       
 def makeSample(input_parameters_value):
@@ -42,7 +42,7 @@ def makeSample(input_parameters_value):
 
 # Calibration
 
-# Replace parameter values for parameters chosen from sensitivity analysis
+# Pass parameter values to parameters chosen from sensitivity analysis
 
   # For Neutrophils
   parameters[155] = round_of_rating(input_parameters_value[0]) # used for discrete parameters
@@ -65,7 +65,7 @@ def makeSample(input_parameters_value):
   parameters[142] = input_parameters_value[7]
   
   # Change MMP8 Threshold from 10
-  parameters[143] = 5input_parameters_value[8]
+  parameters[143] = input_parameters_value[8]
 
   outputSample = open('/home/amangarg/vocalcord-cpuabm-v6/Sample.txt', 'w') # location to write parameter values
   for val in parameters:
