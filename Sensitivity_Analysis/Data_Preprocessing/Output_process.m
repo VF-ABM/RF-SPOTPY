@@ -1,16 +1,17 @@
-    k=1;
+k=1;
+
 for num=1:5400
        
-    filename=strcat('C:\Users\AMAN GARG\Outputs\Output_Biomarkers_',string(num),'.csv'); # path to outputs from VF-ABM
+    filename=strcat('C:\Users\AMAN GARG\Outputs\Output_Biomarkers_',string(num),'.csv'); % path to outputs from VF-ABM
     
     if exist(filename, 'file') == 0
-        rest(k) = num;
+        rest(k) = num; % executions that failed 
         k=k+1;
         continue;
     end
   
     par = xlsread(filename);
-    # Outputs from VF-ABM organized by day
+    % Outputs from VF-ABM organized by day
     out_day0_random(num, :)= par(1,:);
     out_day1_random(num, :)= par(49,:);
     out_day2_random(num, :)= par(97,:);
@@ -19,5 +20,6 @@ for num=1:5400
     out_day7_random(num, :)= par(337,:);
     out_day14_random(num, :)= par(673,:);
     out_day28_random(num,:) = par(1345,:);
-    %end
+    % end
+    
 end

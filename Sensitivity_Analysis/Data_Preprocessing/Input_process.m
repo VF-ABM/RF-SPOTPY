@@ -1,4 +1,4 @@
-filename_in=strcat('C:\Users\AMAN GARG\SA\input_home.xlsx'); # path to input file
+filename_in=strcat('C:\Users\AMAN GARG\SA\input_home.xlsx'); % path to input file
 par_in = xlsread(filename_in);
 
 for num=1:5400
@@ -10,6 +10,6 @@ for num=1:5400
     end
     
     if flag == 0
-        input(num,:) = par_in(num,:)
+        input(num,:) = par_in(num,:) 
     end
 end
