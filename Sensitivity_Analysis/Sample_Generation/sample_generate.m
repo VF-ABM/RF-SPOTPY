@@ -1,12 +1,15 @@
 close all;
 clear all;
 
-par = xlsread('parameters.xlsx','sheet1'); # location of parameter specifications (number, mean, SD, range, and type*)
-size=5400;
+par = xlsread('parameters.xlsx','sheet1'); % location of parameter specifications (number, mean, SD, range, and type*)
+size=5400; % desired number of iterations for sensitivity analysis
 for i=1:213
     stats(i,1) = i;
     a = par(i,4);
     b = par(i,5);
+    
+    % 'j' stores random parameters generated from the distributions. It is used as input for 'generate.m'.
+    % 'stats' allows the user to check the parameter distributions. 
     
     % For lognormal distibution (*Type 1)
     if par(i,6)==1
