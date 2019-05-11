@@ -1,4 +1,4 @@
-# VF-ABM-RF-SPOTPY
+# VF-ABM/RF-SPOTPY
 
 Sensitivity analysis and calibration for a vocal fold agent-based model (VF-ABM) of surgical injury and repair
 
